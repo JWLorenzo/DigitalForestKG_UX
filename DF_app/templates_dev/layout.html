@@ -12,9 +12,11 @@
 
 </head>
 
-<body class="d-flex flex-column">
+<body class="vh-100 overflow-hidden d-flex flex-column">
 
-    <div class="main flex-grow-1">
+    {% include "navbar.html" %}
+
+    <div class="flex-grow-1 overflow-hidden" style="min-height: 0;">
         {% block content %}{% endblock %}
     </div>
 
